@@ -15,9 +15,8 @@ User Authentication – Secure login system (Admin, Staff, etc.)
 Dashboard – Overview of products, stock status, and orders
 Product Management – Add, update, and delete products
 Stock Management – Monitor inventory levels, track purchases/sales
-Order Management – Process and track customer orders
 Search & Filtering – Quickly find products using categories or keywords
-Role-Based Access – Admin can access everything, staff has limited access
+Role-Based Access – Admin can access everything, staff has limited access , user who purchases products 
 
 ADVANCED FEATURES 
 Need automated stock updates when products are purchased.
@@ -28,7 +27,10 @@ Need a simple, easy-to-use interface to manage inventory without technical exper
 Require real-time stock updates to avoid overstocking or running out of products
 Require sales reports and analytics for tracking profitability.
 
-
+authorization: 1) admin
+               2) staff
+               3) user 
+ 
 UNIQUE FEATURE(not yet fix but will try our best)
 AI-Powered Stock Prediction – Forecast inventory needs based on past sales data
 
