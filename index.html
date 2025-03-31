@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Inventory Management</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+            <li><a href="#" onclick="showSection('products')">Products</a></li>
+            <li><a href="#" onclick="showSection('orders')">Orders</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="section active">
+        <h1>Welcome to the Inventory Management System</h1>
+        <div class="dashboard-cards">
+            <div class="card">Total Products: <span id="product-count">0</span></div>
+            <div class="card">Total Orders: <span id="order-count">1</span></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <h2>Product Management</h2>
+        <button class="btn add-btn" onclick="addProduct()">Add Product</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                <!-- Dynamic Product List -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="section">
+        <h2>Order Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="order-list">
+                <tr>
+                    <td>#001</td>
+                    <td>John Doe</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
