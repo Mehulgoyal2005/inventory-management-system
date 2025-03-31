@@ -1,0 +1,185 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Page Layout */
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Side - Login Box */
+.login-box {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Google Login Button */
+.google-login {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.google-login img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/* Input Fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Remember Me & Forgot Password
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.remember-forgot input {
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+} */
+
+/* Remember Me & Forgot Password */
+.remember-forgot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space them apart */
+    align-items: center; /* Align them properly */
+    margin-top: 10px;
+}
+
+/* Remember Me Checkbox */
+.remember-forgot label {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: inline-block;
+    font-size: 14px;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 1px; /* Add spacing between checkbox and text */
+}
+
+/* Forgot Password Link */
+.remember-forgot a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.remember-forgot a:hover {
+    color: #111340;
+}
+
+/* .remember-forgot label{
+    display: inline-block;
+    width: 200px;
+} */
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #111340;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0d0f30;
+}
+
+/* Register Text */
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-text a {
+    text-decoration: none;
+    color: #111340;
+    font-weight: 500;
+}
+
+/* Right Side - Image */
+.login-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafc;
+}
+
+.login-image img {
+    width: 90%;
+    height: auto;
+}
